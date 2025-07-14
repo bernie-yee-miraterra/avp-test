@@ -1,0 +1,9 @@
+kind: Secret
+apiVersion: v1
+metadata:
+  name: aws-prod-ecr
+  annotations:
+    avp.kubernetes.io/path: "argocd/data/aws_prod_ecr"
+type: Opaque
+stringData:
+  aws-prod-ecr: <token>
