@@ -2,7 +2,7 @@ kind: Secret
 apiVersion: v1
 metadata:
   name: aws-prod-ecr
-  namespace: default
+  namespace: argocd
   annotations:
     avp.kubernetes.io/path: "argocd/data/aws_prod_ecr"
 type: Opaque
